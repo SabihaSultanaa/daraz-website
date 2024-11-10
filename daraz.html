@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARAZ WEBSITE</title>
+    <!-- <link rel="stylesheet" href="daraz.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Bungee+Shade&family=Cookie&family=Courgette&family=Dancing+Script&family=Great+Vibes&family=Lobster&family=Monoton&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: o;
+        }
+
+        .firstul {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            /* height: 100px; */
+            left: 100px;
+            background-color: #f85606;
+        }
+
+        .firstul li {
+            margin-top: 5px;
+            margin-left: 30px;
+            color: white;
+            font-size: 15px;
+            list-style: none;
+        }
+
+        .secondul {
+            display: flex;
+            justify-content: center;
+            background-color: #f85606;
+
+            height: 90px;
+        }
+
+        .secondul li {
+            list-style: none;
+       
+            margin-top: 35px;
+        }
+
+        header::before {
+            content: "";
+            background-color: #f85606;
+            position: absolute;
+            top: 0px;
+            height: px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* header{height: 400px;} */
+        span img {
+            height: 45px;
+        }
+
+        input {
+            height: 39px;
+            width: 700px;
+            font-size: 15px;
+            padding-left: 20px;
+            border-radius: 10px;
+            border: 2px solid white;
+            margin-right: 120px;
+        }
+
+        span {
+            position: absolute;
+            left: 170px;
+            top: 30px;
+        }
+
+        .span2 {
+            position: absolute;
+            padding: 5px 10px;
+            top: 40px;
+            color: #f85606;
+            background-color: #ffe1d2;
+            left: 945px;
+            border-radius: 10px;
+        }
+
+        .login {
+            position: absolute;
+            right: 440px;
+            top: 12px;
+        }
+
+        .user {
+            position: absolute;
+            left: 1020px;
+            top: 46px;
+            color: white;
+
+        }
+
+        .dash {
+            color: white;
+            position: absolute;
+            right: 418px;
+            top: 13px;
+        }
+
+        .sign {
+            position: absolute;
+            right: 340px;
+            top: 12px;
+
+        }
+
+        .text {
+            position: absolute;
+            left: 300px;
+        }
+
+        button {
+            border-radius: 10px;
+            color: #f85606;
+            background-color: #ffe1d2;
+            /* height: 30px; */
+            /* width: 30px; */
+            border: none;
+        }
+
+        .globe {
+            position: absolute;
+            left: 1220px;
+            top: 47px;
+            color: white;
+
+
+        }
+
+        .en {
+            position: absolute;
+            right: 260px;
+            top: 12px;
+            color: white;
+        }
+
+        .small {
+            color: white;
+            position: absolute;
+            top: 14px;
+            right: 250px;
+        }
+
+        .cart {
+            position: absolute;
+            color: white;
+            right: 195px;
+            top: 10px;
+        }
+
+        .items {
+            width: 200px;
+            height: 700px;
+            color: aliceblue;
+        }
+
+        body {
+            /* background: #e7e8ec; */
+            background: rgb(242, 242, 242);
+        }
+
+        #items li {
+            list-style: none;
+            margin: 1%;
+        }
+
+        #items {
+            height: 300px;
+            width: 200px;
+            background-color: white;
+            border-end-end-radius: 2px solid grey;
+            margin-left: 300px;
+            margin-top: 50px;
+            margin-bottom: auto;
+        }
+
+        .thirdul li a {
+
+
+            text-decoration: none;
+            width: 172px;
+            font-family: Roboto;
+            font-size: 13px;
+            line-height: 20px;
+            color: #757575;
+            font-weight: 600;
+
+
+            cursor: pointer;
+            text-align: left;
+            margin-left: 0px;
+
+
+
+        }
+
+        .thirdul li {
+            list-style: none;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .itemsdiv {
+            background-color: white;
+            height: 370px;
+            width: 250px;
+            border-radius: 20px;
+            /* border: 2px solid rgb(223, 216, 216); */
+            text-align: left;
+            justify-self: left;
+            /* box-shadow: 2px 2px 3px gray; */
+            margin-top: 13px;
+            margin-left: 11%;
+            box-shadow: 5px 5px 5px 1px rgb(185, 180, 180);
+            border-left: 2px solid rgb(227, 219, 219);
+        }
+
+        .bannerdiv {
+            margin-top: 13px;
+            /* margin-right: 10px; */
+            margin-left: 15px;
+            border-radius: 20px;
+        }
+
+        aside {
+            display: flex;
+        }
+
+        #banimg {
+            border-radius: 20px;
+        }
+
+        .pmenu {
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 10px;
+            background-color: #ffeae0f3;
+
+            margin-top: 20px;
+            height: 36px;
+
+            width: 1185px;
+            margin-left: 170px;
+        }
+
+        .pmenu a {
+            color: black;
+            font-family: Roboto;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .pimage {
+            position: relative;
+            top: 5px;
+        }
+
+        .boximg {
+            display: flex;
+            background-color: white;
+            border: 2px solid rgb(239, 236, 236);
+            border-radius: 20px;
+            height: 150px;
+            margin-top: 25px;
+            width: 1185px;
+            margin-left: 170px;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+
+        .image {
+            box-shadow: 5px 5px 5px 1px rgb(185, 180, 180);
+            width: 80px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-radius: 30px;
+        }
+
+        .boximg a {
+            font-family: Roboto;
+            color: black;
+            font-size: 15px;
+        }
+
+        .pflash a {
+            font-family: Roboto;
+            color: black;
+            font-size: 15px;
+        }
+
+        .pflash a h4 {
+            margin-top: 20px;
+        }
+
+        .fimg {
+            width: 180px;
+            margin-right: 10px;
+            box-shadow: 5px 5px 5px 1px rgb(185, 180, 180);
+
+            border-radius: 10px;
+        }
+
+        .pflash {
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            width: 1185px;
+            margin-left: 175px;
+
+
+        }
+
+        h2 {
+            font-family: Roboto;
+            margin-left: 175px;
+            margin-top: 35px;
+            margin-bottom: 10px;
+            /* color: #757575; */
+            /* color: rgb(128, 128, 128); */
+            color: rgba(0, 0, 0, 0.681);
+
+
+        }
+
+        .pflash h3,
+        h4 {
+            font-family: Roboto;
+            line-height: 30px;
+        }
+
+        .pflash h3 {
+            color: orangered;
+        }
+
+
+        .pcat {
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            width: 1185px;
+            height: 150px;
+            margin-left: 170px;
+
+
+
+        }
+
+        .pcat a {
+            color: black;
+            font-family: Roboto;
+            font-size: 15px;
+
+        }
+
+        .cimage {
+            width: 130px;
+        }
+
+        .cat {
+            background-color: white;
+
+            box-shadow: 5px 5px 5px 1px rgb(185, 180, 180);
+            width: 150px;
+            height: 150px;
+            margin: 0px 2px;
+        }
+
+
+
+
+
+
+        .cat1 {
+            background-color: white;
+
+            box-shadow: 5px 5px 5px 1px rgb(185, 180, 180);
+            width: 150px;
+            height: 150px;
+            margin: 4px 2px;
+        }
+        .more h3{font-family: Roboto;
+        color: orangered;
+    width: 400px;
+height: 20px;
+border: 1px solid orangered;
+margin-left: 37%;
+text-align: center;
+padding: 10px;
+font-size: 18px;
+}
+.more{margin-top: 50px;}
+.mainf{font-family: Roboto;
+display: flex;
+margin-top: 50px;}
+.mainf a h2{color:orangered;
+font-size: 19px;
+text-decoration: none;
+
+
+}
+
+.mainf a h3{color: black;
+font-size: 15px;
+text-decoration: none;
+line-height: 24px;
+margin-left: 175px;
+
+}
+
+.mainf li{list-style: none;}
+        #money{margin-top: 0px;}
+
+
+.count{display:flex;
+text-align: center;
+justify-content:space-around;
+margin-left: 85px;
+margin-top: 15px;}
+
+
+
+
+
+.count2{display:flex;
+text-align: center;
+justify-content: space-around;
+margin-left: 85px;}
+.daraz{margin-left: 100px;}
+.ftimg{
+
+margin-left: 100px;
+margin-top: 10px;
+height: 100px;
+width: 100px;
+
+
+
+
+}
+
+.fb{
+width: 420px;
+margin-left: 50px;}
+.picl{margin-left: 20px;}
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar1">
+            <ul class="firstul">
+                <li> <a href="">Become a Seller</a></li>
+                <li><a href="">Daraz Affiliate Program </a> </li>
+                <li> <a href="">Help & Support </a></li>
+                <li> <a href="">Daraz Logistics Partner </a></li>
+
+            </ul>
+        </nav>
+        <nav id="navbar2">
+            <ul class="secondul">
+                <li><span><img
+                            src="https://icms-image.slatic.net/images/ims-web/e650d6ca-1841-4646-b0e9-4ddbf2beb731.png"
+                            alt="DARAZ"></span></li>
+                <li class="text"><input type="search" placeholder="Search in Daraz"> </li>
+                <span class="span2"><button><i class="fa-solid fa-magnifying-glass"
+                            style="font-size: 17px ;"></i></button></span>
+                <span class="user"><i class="fa-regular fa-user"></i></span>
+                <li class="login"><a href=""> Login </a></li>
+                <li class="dash">|</li>
+
+                <li class="sign"> <a href="">Sign Up</a></li>
+
+                <span class="globe"><i class="fa-solid fa-globe"></i></span>
+                <li class="en">EN</li>
+                <li class="small"><i class="fa-solid fa-v" style="font-size:9px;"></i></li>
+                <li class="cart"> <i class="fa-solid fa-cart-shopping" style="font-size: 23px;"></i> </li>
+            </ul>
+
+        </nav>
+    </header>
+    <aside>
+        <div class="itemsdiv">
+            <ul class="thirdul">
+                <li><a href="#"> Groceries & Pets</a></li>
+                <li> <a href="#">Health & Beauty</a></li>
+                <li><a href="#">Men's Fashion </a></li>
+                <li><a href="#">Women's Fashion </a></li>
+                <li><a href="#"> Mother & Baby</a> </li>
+                <li> <a href="#">Home & Lifestyle </a></li>
+                <li> <a href="#">Electronic Devices</a> </li>
+                <li><a href="#">TV & Home Appliances</a></li>
+                <li><a href="#">Sports and Outdoor</a></li>
+                <li><a href="#">Watches,Bags & Jwellery</a></li>
+                <li><a href="#">Automative & Motorbike</a></li>
+                <li><a href="#">Electronic Accessories</a></li>
+            </ul>
+        </div>
+        <div class="bannerdiv">
+            <img src="banner image.png" alt="" id="banimg" width="920" height="370px">
+        </div>
+    </aside>
+    <section>
+        <div class="pmenu">
+            <div class="first">
+                <img src="//icms-image.slatic.net/images/ims-web/55c642f0-250b-4515-9c8a-42cce3327098.png" alt=""
+                    class="pimage">
+                <a href="">Safe Payments &nbsp; &nbsp; |</a>
+            </div>
+
+
+            <div class="second"> <img
+                    src="//icms-image.slatic.net/images/ims-web/1b7e5ccb-89fc-4383-bc27-4586e82195be.png" alt=""
+                    class="pimage">
+                <a href="">Nationwide Delivery &nbsp; &nbsp; |</a>
+            </div>
+
+
+            <div class="third"> <img
+                    src="//icms-image.slatic.net/images/ims-web/f2a7f550-3a25-478d-9879-e6aa419c7ebf.png" alt=""
+                    class="pimage">
+                <a href="">Free & Easy Returns &nbsp; &nbsp; | </a>
+            </div>
+
+            <div class="forth"> <img
+                    src="//icms-image.slatic.net/images/ims-web/05352646-9b19-4283-a7b1-dcb16736663e.png" alt=""
+                    class="pimage">
+                <a href="">Best Price Guaranteed &nbsp; &nbsp; | </a>
+            </div>
+
+
+            <div class="fifth"> <img
+                    src="//icms-image.slatic.net/images/ims-web/781b5194-65f0-4ae5-b7a6-003bc717054f.png" alt=""
+                    class="pimage">
+                <a href="">100% Authentic Products &nbsp; &nbsp; | </a>
+            </div>
+
+
+            <div class="six"> <img src="//icms-image.slatic.net/images/ims-web/8faa565d-b52d-4e05-90e4-38466e764e84.png"
+                    alt="" class="pimage">
+                <a href="">Daraz Verified &nbsp; &nbsp; </a>
+            </div>
+        </div>
+    </section>
+    <div class="boximg">
+        <div class="box1">
+            <img class="image" src="//icms-image.slatic.net/images/ims-web/1440c427-d3fe-49f7-aa90-09c8eb0b84ea.png"
+                alt="Mart">
+            <a href="">
+                <h4>Mart</h4>
+            </a>
+        </div>
+        <div class="box2">
+            <img class="image" src="//icms-image.slatic.net/images/ims-web/4f250051-aac7-46bd-9bea-c5b836dea844.png"
+                alt="Fashion">
+            <a href="">
+                <h4>Fashion</h4>
+            </a>
+        </div>
+        <div class="box3">
+            <img class="image" src="//icms-image.slatic.net/images/ims-web/0ed92f69-d596-458b-bcd6-8d2bb69ef911.png"
+                alt="Beauty">
+            <a href="">
+                <h4>Beauty</h4>
+            </a>
+        </div>
+        <div class="box4">
+            <img class="image" src="//icms-image.slatic.net/images/ims-web/d85f0ced-6459-455a-8504-150655bf948c.png"
+                alt="Home &amp; Decor">
+            <a href="">
+                <h4> Home & Decor</h4>
+            </a>
+        </div>
+        <div class="box5">
+            <img class="image" src="//icms-image.slatic.net/images/ims-web/9f2cf12a-3899-423e-9273-c752acafa387.png"
+                alt="Daraz Like New">
+            <a href="">
+                <h4>Daraz Like New</h4>
+            </a>
+        </div>
+        <div class="box6">
+            <img class="image" src="//icms-image.slatic.net/images/ims-web/cc89e68e-c809-4638-a5a6-2dc7e450d2a1.png"
+                alt="Free Delivery">
+            <a href="">
+                <h4>Free Delivery</h4>
+            </a>
+        </div>
+        <div class="box7">
+            <img class="image" src="//icms-image.slatic.net/images/ims-web/a13edb2b-61bf-4dec-a410-f85b63d41490.png"
+                alt="Everyday Low Price">
+            <a href="">
+                <h4>Everyday Low Price</h4>
+            </a>
+
+        </div>
+        <div class="box8">
+
+            <img class="image" src="//icms-image.slatic.net/images/ims-web/62624b46-f8ca-43b7-a5fa-1d31920a6eb5.png"
+                alt="New on Daraz">
+            <a href="">
+                <h4>New on Daraz</h4>
+            </a>
+        </div>
+        <div class="box9">
+
+            <img class="image" src="//icms-image.slatic.net/images/ims-web/e7b9ee8c-1fbf-4548-ab35-db6eeca830a6.png"
+                alt="Flash Sale">
+            <a href="">
+                <h4>Flash Sale</h5>
+            </a>
+        </div>
+    </div>
+    <h2>Flash Sale</h2>
+    <div class="pflash">
+        <div class="flash1">
+            <img class="fimg"
+                alt="Air Pro TWS Earbuds Wireless buds Airpods_Pro I12 Noise Cancellation woofer Bluetooth headset"
+                src="https://static-01.daraz.pk/p/7ae651ad8a5bcdb86fe7a633b222c552.jpg">
+            <a href="">
+                <h4>Air Pro TWS Earbuds</h4>
+            </a>
+            <h3>RS.799</h3>
+            <h4><s>Rs.3000</s> -75%</h4>
+
+        </div>
+        <div class="flash2">
+
+            <img class="fimg"
+                alt="Blutooth Handfree Wireless Bluetooth Headset Good Quality Bluetooth Handsfree Earphone"
+                src="https://static-01.daraz.pk/p/24468841b9e92a54752544dd92f8f419.jpg">
+            <a href="">
+                <h4>Bluetooth Handfree Set</h4>
+            </a>
+
+            <h3>Rs.399</h3>
+            <h4><s>Rs.1500</s> -73%</h4>
+
+        </div>
+        <div class="flash3">
+
+            <img class="fimg"
+                alt="M10 earbuds NEWEST Digitatindicator True Wireless Bluetooth Headset Be Proud V5.3 BT&nbsp;Wireless - Black"
+                src="https://static-01.daraz.pk/p/aff000bc9db2214fe5ebcf418f504943.jpg">
+            <a href="">
+                <h4>M10 earbuds NEWEST</h4>
+            </a>
+
+            <h3>Rs.789</h3>
+            <h4><s>Rs.1999</s> -60%</h4>
+
+        </div>
+        <div class="flash4">
+
+            <img class="fimg"
+                alt="High Quality Wireless Headphones Bluetooth  Head Phones For Girls for all Smartphones with mic White and Black Colour"
+                src="https://static-01.daraz.pk/p/02866ad60f082aa48d88721d1d2f9b80.jpg">
+            <a href="">
+                <h4>Headphones Bluetooth</h4>
+            </a>
+
+            <h3>Rs.649</h3>
+            <h4><s>Rs.1999</s> -67%</h4>
+
+        </div>
+        <div class="flash5"><img class="fimg"
+                src="https://static-01.daraz.pk/p/204f1ace528b0d1dd526330b11dab185.jpg_400x400q75-product.jpg_.webp"
+                alt="M10 TWS Wireless Headphones Earbuds Touch Control Bluetooth-Compatible 5.1 / 5.0 Earphones Wireless Headset Waterproof 9D Hifi Quality Earbuds LED Display Wireless Earphone With Charging Box Sound Like f9 m90 N35 Best For Gaming Pubg Gym Airdots">
+
+            <a href="">
+                <h4>Original M90 i7S</h4>
+            </a>
+
+
+
+            <h3>Rs.799</h3>
+            <h4><s>Rs.2600</s> -69%</h4>
+
+
+        </div>
+        <div class="flash6">
+            <img class="fimg"
+                src="https://static-01.daraz.pk/p/f282a830630528e535b96fe768df0b11.jpg_400x400q75-product.jpg_.webp"
+                id="last"
+                alt="Wireless Bluetooth Remote Shutter Button For Selfie Stick Monopod Tripod Compatible With iOS And Android Devices Smartphones - Black">
+            <a href="">
+                <h4>Bluetooth Remote</h4>
+            </a>
+
+            <h3>Rs.789</h3>
+            <h4><s>Rs.2200</s> -69%</h4>
+
+        </div>
+    </div>
+
+    <!-- -----------------------------categories work start ------------------------------------------------>
+
+
+    <h2>Categories</h2>
+    <div class="pcat">
+        <div class="cat">
+            <img class="image" src="https://static-01.daraz.pk/p/f0685ed7d6cd60fad03dae9b038140a8.jpg"
+                alt="Moisturizers">
+            <a href="">
+                <h4>Moisturizers</h4>
+            </a>
+        </div>
+
+        <div class="cat">
+            <img class="image" src="https://static-01.daraz.pk/p/f0037f8e786578101622f70fc5949fb8.jpg"
+                alt="Facial Cleansers">
+            <a href="">
+                <h4>Fashial Cleansers</h4>
+            </a>
+        </div>
+        <div class="cat">
+            <img class="image" src="https://static-01.daraz.pk/p/f96fa6fa36578b857e3b4ae9a48438a9.jpg"
+                alt="Wired Headsets">
+            <a href="">
+                <h4>Wired Headsets</h4>
+            </a>
+        </div>
+        <div class="cat">
+            <img class="image" src="https://static-01.daraz.pk/p/fdb3dbbfc7e86ec27dbafdec74682496.jpg" alt="Casual">
+            <a href="">
+                <h4> Casual</h4>
+            </a>
+        </div>
+        <div class="cat">
+            <img class="image" src="https://static-01.daraz.pk/p/db1d909bbd43636e054d6833e3e5c9af.jpg" alt="Black Tea">
+            <a href="">
+                <h4>Black Tea</h4>
+            </a>
+        </div>
+        <div class="cat">
+            <img class="image" src="https://static-01.daraz.pk/p/78b617896efd0b8e63fe0cc8c4b325e1.jpg"
+                alt="Rechargeable &amp; Flashlights">
+            <a href="">
+                <h4>Recargable Lights</h4>
+            </a>
+        </div>
+        <div class="cat">
+
+
+            <img class="image" src="https://static-01.daraz.pk/p/67d8a507ddebe6f8314962a8e2a792da.jpg" alt="Oil">
+            <a href="">
+                <h4>Oil</h4>
+            </a>
+
+        </div>
+        <div class="cat">
+
+            <img class="image" src="https://static-01.daraz.pk/p/58b92c8a173e615191df4658dffb3eef.jpg"
+                alt="Wireless Earbuds">
+            <a href="">
+                <h4>Wireless Earbuds</h4>
+            </a>
+        </div>
+
+    </div>
+    <!-- -----------------------just for u work starts ------------------------------------->
+    <section>
+
+
+
+
+        <div class="pcat">
+            <div class="cat1">
+                <img class="image" src="https://static-01.daraz.pk/p/e42d0dbc7a390a9746cc836b8f330483.jpg" alt="Casual">
+                <a href="">
+                    <h4>Casual</h4>
+                </a>
+            </div>
+
+            <div class="cat1">
+                <img class="image" src="https://static-01.daraz.pk/p/06c02164d4860468d0260aa3cc35946c.jpg"
+                    alt="Socks &amp; Tights">
+                <a href="">
+                    <h4>Socks & Tights</h4>
+                </a>
+            </div>
+            <div class="cat1">
+                <img class="image" src="https://static-01.daraz.pk/p/c050922e4bc93c5d3cf8c651dec782aa.jpg"
+                    alt="Headlamps">
+                <a href="">
+                    <h4>Headlamps</h4>
+                </a>
+            </div>
+            <div class="cat1">
+                <img class="image" src="https://static-01.daraz.pk/p/8dbd7b77666c1f1c90b5c8bdc9d89f18.jpg"
+                    alt="Hats &amp; Caps">
+                <a href="">
+                    <h4> Hats & Caps</h4>
+                </a>
+            </div>
+            <div class="cat1">
+                <img class="image" src="https://static-01.daraz.pk/p/30d1513b6525b3eba174ec6440d48e3b.jpg"
+                    alt="Cleaning tools">
+                <a href="">
+                    <h4>Cleaning Tools</h4>
+                </a>
+            </div>
+            <div class="cat1">
+                <img class="image" src="https://static-01.daraz.pk/p/d4fee0a06e038080c0d4e9041273594c.jpg"
+                    alt="Cross Body &amp; Shoulder Bags">
+                <a href="">
+                    <h4>Shoulder Bags</h4>
+                </a>
+            </div>
+            <div class="cat1">
+
+
+                <img class="image" src="https://static-01.daraz.pk/p/39b5b0d13615acb6e900d341eb94d612.jpg"
+                    alt="Wall Decor">
+                <a href="">
+                    <h4>Wall Decor</h4>
+                </a>
+
+            </div>
+
+            <div class="cat1">
+
+                <img class="image" src="https://static-01.daraz.pk/p/a8bbd76788c7d63cf99b669debddfd45.jpg"
+                    alt="Card Holders">
+                <a href="">
+                    <h4>Card Holders</h4>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <h2>Just For You</h2>
+
+
+<div class="pflash">
+        <div class="flash1">
+            <img class="fimg" src="https://pk-live-21.slatic.net/kf/S52c2d1a5062b4b629f20ed18d1e8198au.jpg" 
+            alt="STEEL BODY FASTENER SNAP BUTTON PRESS TOOL FOR CLOTHES PORTABLE DIY BUTTON PRESS PLIER TOOL 9 mm METAL RING BUTTONS PRESSER MACHINE">
+            <a href="">
+                <h4>Steel Button</h4>
+            </a>
+            <h3>RS.799</h3>
+            <h4><s>Rs.3000</s> -75%</h4>
+
+        </div>
+        <div class="flash2">
+
+            <img class="fimg" src="https://static-01.daraz.pk/p/00e0dbc8b4546d0a28343aea277986e0.jpg_400x400q75-product.jpg_.webp"
+             alt="Casual Soft Comfortable Slippers / Chappal For Girls, High Quality Women Footwear, Slippers For Girls">
+            <a href="">
+                <h4>Footwear</h4>
+            </a>
+
+            <h3>Rs.399</h3>
+            <h4><s>Rs.1500</s> -73%</h4>
+
+        </div>
+
+
+        <div class="flash3">
+
+            <img class="fimg" src="https://static-01.daraz.pk/p/315ede69ece22322507ea2ff4827abad.png_400x400q75-product.jpg_.webp"
+             alt="Sleeves Zipper Winter Jacket, Blue undefined Light Grey Colors, Trending undefined Stylish, Good For Winter">
+            <a href="">
+                <h4>Winter Jacket</h4>
+            </a>
+
+            <h3>Rs.789</h3>
+            <h4><s>Rs.1999</s> -60%</h4>
+
+        </div>
+
+        <div class="flash4">
+
+            <img class="fimg" src="https://pk-live-21.slatic.net/kf/Sce56c831af7649d188c6df0f9301a062C.jpg" 
+            alt="6 PCS New Lxury Love Rhinestone Jewelry Ladies Ring Necklace Earrings Bracelet Set Simple Digital Leather Strap Quartz Watch">
+            <a href="">
+                <h4>EW Luxury Set</h4>
+            </a>
+
+            <h3>Rs.649</h3>
+            <h4><s>Rs.1999</s> -67%</h4>
+
+        </div>
+
+        <div class="flash5">
+            <img class="fimg" src="https://static-01.daraz.pk/p/9f2447966be01f35e3546cf7515cda09.jpg_400x400q75-product.jpg_.webp"
+             alt="&quot;Kitchen Pro 3-in-1: Manual Tabletop Drum Cheese Grater and Rotary Slicer for Precision Culinary Creations&quot;">
+        <a href="">
+            <h4>Kitchen Pro 3 in 1</h4>
+        </a>
+
+
+
+        <h3>Rs.799</h3>
+        <h4><s>Rs.2600</s> -69%</h4>
+
+
+    </div>
+    <div class="flash6">
+        <img class="fimg" src="https://static-01.daraz.pk/p/4321192acef7f3f2c6f1e0de5cc06faa.jpg_400x400q75-product.jpg_.webp" 
+        alt="Mini Flexible Foam Tripod Octopus Stand for Cell Phone Camera">
+        <a href="">
+                <h4>Mini Flexible Stand</h4>
+            </a>
+
+            <h3>Rs.789</h3>
+            <h4><s>Rs.2200</s> -69%</h4>
+
+        </div>
+    </div>
+    <footer>
+<div class="more"> <h3>Load More </h3></div>
+
+
+    </footer>
+<footer>
+    <div class="mainf">
+<div class="foot1">
+   <li><a href="#"><h2>Customer Care</h2></a></li>
+   <li><a href="#"><h3>How To Buy</h3></a></li>
+
+   <li><a href="#"><h3>Corporate & Bulk Purchasing</h3></a></li>
+   <li><a href="#"><h3>Returns & Refunds</h3></a></li>
+   <li><a href="#"><h3>Daraz Shop</h3></a></li>
+   <li><a href="#"><h3>Contact Us</h3></a></li>
+   <li><a href="#"><h3>Purchase Protection</h3></a></li>
+   <li><a href="#"><h3>Daraz Pickup Points</h3></a></li>
+ <li><a href="#"><h2>Make Money With Us</h2></a></li>
+   
+   <li><a href="#"><h3>Sell On Daraz</h3></a></li>
+   <li><a href="#"><h3>Join Daraz Affiliate Program</h3></a></li>
+   <li><a href="#"><h3>Daraz University</h3></a></li>
+   
+
+
+
+</div>
+<div class="foot2">
+    <li><a href="#"><h2>Daraz</h2></a></li>
+    <li><a href="#"><h3>About Us</h3></a></li>
+    <li><a href="#"><h3>Daraz Donates</h3></a></li>
+    <li><a href="#"><h3>Digital Payments</h3></a></li>
+    <li><a href="#"><h3>Daraz Blogs</h3></a></li>
+    <li><a href="#"><h3>Terms & Conditions</h3></a></li>
+    <li><a href="#"><h3>Privacy Policy</h3></a></li>
+    <li><a href="#"><h3>Online Grocery Shopping</h3></a></li>
+    <li><a href="#"><h3>NTN Number : 4012111</h3></a></li>
+    <li><a href="#"><h3>STRN Number : 170040</h3></a></li>
+    <li><a href="#"><h3>Online Shopping App</h3></a></li>
+    <li><a href="#"><h3>Daraz Exclusive</h3></a></li>
+</div>
+<div class="foot3">
+
+    <li><a href="#"><h2 class="daraz">Daraz International</h2></a></li>
+    <div class="count">
+<img src="pak.jpg" alt="" height="50" width="47"><h4 style="padding-top: 10px;">Pakistan</h4> &nbsp;
+&nbsp;<img src="bangla.jpg" alt="" height="34" width="35" style="padding-top: 8px;">&nbsp;&nbsp;<h4 style="padding-top: 8px;">Bangladesh</h4>
+</div>
+<br>
+<div class="count2">
+<img src="sri.jpg" alt="" height="35" width="35" ><h4>Srilanka</h4>
+<img src="myan.jpg" alt="" height="43" width="47"><h4 style="padding-top: 2px;">Myanmar</h4></div>
+
+<li><a href="#"><h2 class="daraz">Payment Methods</h2></a></li>
+<div class="count">
+    <img src="visa.png" alt="" height="50" width="80" > 
+    <img src="easy.png" alt="" height="40" width="70" style="padding-top: 10px;">
+    </div>
+    <br>
+    <div class="count2">
+    <img src="union.png" alt="" height="35" width="85" style="margin-left: 20px;">
+    <img src="wallet.png" alt="" height="50" width="180" ></div>
+
+
+
+
+
+</div>
+
+<div class="foot4"><li><a href="#"><h2 class="daraz">Exclusice Deals & Offers!</h2></a></li>
+
+    <img class="ftimg" src="//laz-img-cdn.alicdn.com/images/ims-web/TB18aqePBLoK1RjSZFuXXXn0XXa.png" 
+    alt="" data-spm-anchor-id="a2a0e.home.footer_top.i0.35e34076X8eQlB">
+    <li><a href="#"><h2 class="daraz">Follow Us</h2></a></li>
+       <div class="fb">
+        <img src="fb.png" alt="" width="69" height="45" class="picl" style="padding-left: 10px;">
+        <img src="ttwitter.png" alt=""width="50" height="51"class="picl" >
+        <img src="insta.avif" alt=""width="40" height="43" class="picl" style="padding-bottom: 4px;">
+        <img src="Youtube_logo.png" alt=""width="34" height="36" class="picl" style="padding-bottom: 6px;" >
+        <img src="world.jpg" alt=""width="34" height="34" class="picl" style="padding:8px;">
+
+</div>
+</div>
+
+
+</footer>
+</body>
